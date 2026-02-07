@@ -1,2 +1,30 @@
 django==4.2.1
 python-decouple
+pillow
+djangorestframework
+
+# third party modules
+markdown
+django-filter
+drf-yasg[validation]
+djangorestframework-simplejwt
+djoser
+django-cors-headers
+
+# deployment modules
+gunicorn
+
+# email third party modules
+django-mail-templated
+
+# refactoring and tests
+black
+flake8
+pytest
+pytest-django
+Faker
+
+#background proccess and cashe
+celery
+redis
+django-redis

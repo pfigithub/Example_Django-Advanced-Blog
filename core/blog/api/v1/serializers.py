@@ -43,7 +43,7 @@ class PostSerializer(serializers.ModelSerializer):
 
     def create(self, validated_date):
         validated_date["author"] = Profile.objects.get(
-            user__id=self.context.get("reqest").user.id
+            user__id=self.context.get("request").user.id
         )
         return super().create(validated_date)
 
